@@ -143,10 +143,9 @@
     <details class="gate-help">
       <summary>How do I get a token?</summary>
       <ol>
-        <li>Open <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">github.com/settings/tokens</a> → <b>Fine-grained tokens</b> → <b>Generate new token</b>.</li>
-        <li>Under <b>Repository access</b> pick <b>Only select repositories</b> → choose the wedding-plan repo.</li>
-        <li>Under <b>Permissions → Repository → Contents</b>, set <b>Read and write</b>.</li>
-        <li>Generate, copy the <code>github_pat_…</code> string, and paste it above.</li>
+        <li><b>If you own the shared repo:</b> open <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">Fine-grained tokens</a> → <b>Generate new token</b> → Repository access → <b>Only select repositories</b> → pick the shared repo → Permissions → Repository → <b>Contents: Read and write</b>.</li>
+        <li><b>If you were added as a collaborator:</b> a fine-grained token can't reach a repo owned by someone else, so use a <a href="https://github.com/settings/tokens/new?scopes=repo&description=Shared%20planner" target="_blank" rel="noopener">classic token</a> → tick the <b>repo</b> scope → <b>Generate token</b>.</li>
+        <li>Copy the token string and paste it above. It's saved only in this browser.</li>
       </ol>
     </details>
   </div>
